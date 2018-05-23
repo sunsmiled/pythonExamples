@@ -3,6 +3,16 @@ __author__ = 'Sun Fang'
 
 # 打印格式化与字符串
 
+# 1.如何调整垂直间隔（添加或者删除换行符）
+# 2.如何用制表符设置水平间隔
+# 3.如何使用格式字符串显示不同的数字格式
+# 4.使用格式字符串的两种方法：%符号和format（）方法
+# 5.如何使用split()分解字符串和用join()联接字符串
+# 6.如何使用startwith()、endwith()、in和index()
+# 7.使用strip()去除字符串末尾的部分
+# 8.使用upper()和lower()将字符串转化为全大写全小写
+
+
 # 换行
 print("Hello")
 print("World")
@@ -78,3 +88,29 @@ print(long_string)
 long_string = " WOOF ".join(word_list)
 print(long_string)
 # 搜索字符串
+name = "Frankenstein"
+print(name.startswith("F"))
+print(name.startswith("f"))
+print(name.startswith("Frank"))
+print(name.endswith("n"))
+print(name.endswith("stein"))
+print(name.endswith("stone"))
+
+addr1 = "567 Maple Lane"
+if "Maple" in addr1:
+    position = addr1.index("Maple")
+    print("found 'Maple' at index", position)
+    print("That address has 'Maple' in it.")
+# 删除字符串的一部分
+name = "iSara Sun"
+short_name = name.strip("un")
+print(short_name)
+
+# 改变大小写
+string1 = "Hello"
+string2 = string1.lower()
+string3 = string1.upper()
+print(string2)
+print(string3)
+
+
